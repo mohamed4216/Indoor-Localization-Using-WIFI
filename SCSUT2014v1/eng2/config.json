@@ -1,0 +1,95 @@
+{
+  "latitude": 35.714295,
+  "longitude": 139.761845,
+  "width": 60,
+  "height": 60,
+  "bearing": -12.5,
+  "defaultFloor" : 11,
+  "floorMaps": {
+	    "12F": {"imagePath" : "12F.png",
+              "zIndex" : 12,
+              "positions" : {},
+	            "buttonIndex" : 0,
+	            "buttonText": "12F"},
+	    "11F": {"imagePath" : "11F.png",
+              "zIndex" : 11,
+              "positions" : {
+                "height": 61
+              },
+	            "buttonIndex" : 1,
+	            "buttonText": "11F"},
+	    "10F": {"imagePath" : "10F.png",
+              "zIndex" : 10,
+              "positions" : {},
+	            "buttonIndex" : 2,
+	            "buttonText": "10F"},
+	    "9F": {"imagePath" : "9F.png",
+              "zIndex" : 9,
+              "positions" : {},
+	            "buttonIndex" : 3,
+	            "buttonText": "9F"},
+	    "8F": {"imagePath" : "8F.png",
+              "zIndex" : 8,
+              "positions" : {},
+	            "buttonIndex" : 4,
+	            "buttonText": "8F"},
+	    "7F": {"imagePath" : "7F.png",
+              "zIndex" : 7,
+              "positions" : {},
+	            "buttonIndex" : 5,
+	            "buttonText": "7F"},
+	    "6F": {"imagePath" : "6F.png",
+              "zIndex" : 6,
+              "positions" : {},
+	            "buttonIndex" : 6,
+	            "buttonText": "6F"},
+	    "5F": {"imagePath" : "5F.png",
+              "zIndex" : 5,
+              "positions" : {
+                  "height": 67.5,
+                  "latitude":   35.71426,
+                  "longitude": 139.761860
+              },
+	            "buttonIndex" : 7,
+	            "buttonText": "5F"},
+	    "4F": {"imagePath" : "4F.png",
+              "zIndex" : 4,
+              "positions" : {
+                  "height": 67.5,
+                  "latitude":   35.71426,
+                  "longitude": 139.761860
+              },
+	            "buttonIndex" : 8,
+	            "buttonText": "4F"},
+	    "3F": {"imagePath" : "3F.png",
+              "zIndex" : 3,
+              "positions" : {
+                  "height": 67.5,
+                  "latitude":   35.71426,
+                  "longitude": 139.761860
+              },
+	            "buttonIndex" : 9,
+	            "buttonText": "3F"},
+	    "2F": {"imagePath" : "2F.png",
+              "zIndex" : 2,
+              "positions" : {
+                   "width": 65.5,
+                   "height": 74.5,
+                   "latitude":   35.71426,
+                   "longitude": 139.76184
+              },
+	            "buttonIndex" : 10,
+	            "buttonText": "2F"},
+	    "1F": {"imagePath" : "1F.png",
+              "zIndex" : 1,
+              "positions" : {
+                   "width": 68,
+                   "height": 73,
+                   "latitude":   35.71427,
+                   "longitude": 139.76185
+              },
+	            "buttonIndex" : 11,
+	            "buttonText": "1F"}
+
+	}
+}

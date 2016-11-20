@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link type="text/css" rel="stylesheet" href="http://jasonm23.github.io/markdown-css-themes/swiss.css"/>
+</head>
+<body>
+
+<h1 id="scs-ut-2014-dataset:location-basedgameresultsforwirelessindoorlocalizationdeployment">SCS-UT&#8211;2014-DATASET: Location-based Game Results for Wireless Indoor Localization Deployment</h1>
+
+<p>This is a dataset that is collected on a location-based game for deploying Wireless Indoor Localization.
+Our main aim of the experiment is the evaluation of effectiveness of controlling game elements with the iterative data-driven feedback.
+This dataset includes not only training data for localization
+but also the game data such as how to control users and how users behaved.</p>
+
+<p>This experiments was conducted on six floors with about 60 meters by 70 meters in the University of Tokyo. We recruited 18 students as participants five weeks.
+The more details of the experiment are in our paper [1].</p>
+
+<p>Please feel free to send any questions or comments to us <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x73;&#x63;&#115;&#x2d;&#x75;&#x74;&#x2d;&#50;&#48;&#49;&#52;&#45;&#100;&#97;&#116;&#x61;&#115;&#101;&#x74;&#x40;&#x69;&#x63;&#115;&#x2e;&#x74;&#46;&#117;&#45;&#x74;&#111;&#x6b;&#x79;&#x6f;&#46;&#x61;&#99;&#x2e;&#x6a;&#112;">&#x73;&#x63;&#x73;&#x2d;&#x75;&#x74;&#45;&#x32;&#x30;&#49;&#x34;&#x2d;&#100;&#x61;&#116;&#x61;&#115;&#101;&#x74;&#x40;&#105;&#99;&#x73;&#x2e;&#116;&#46;&#x75;&#45;&#116;&#111;&#x6b;&#x79;&#111;&#x2e;&#x61;&#x63;&#46;&#106;&#112;</a>.</p>
+
+<p>[1] Ryoma Kawajiri, Masamichi Shimosaka, Hisashi Kashima.<br/>
+<strong>Steered Crowdsensing: Incentive Design towards Quality-Oriented Place-Centric Crowdsensing.</strong><br/>
+In Proceedings of 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing, pp. 691&#8211;701, Seattle, Washington, USA, September 2014.</p>
+
+<h2 id="copyrightandlicence">Copyright and licence</h2>
+
+<p>Documentation and dataset copyright 2014&#8211;2014 Intelligent Cooperative Systems Lab., The University of Tokyo. This dataset is made available under the Public Domain Dedication and License v1.0 whose full text can be found at: <a href="http://opendatacommons.org/licenses/odbl/1.0/">http://opendatacommons.org/licenses/odbl/1.0/</a>. </p>
+
+<h2 id="authors">Authors</h2>
+
+<ul>
+<li>Author: Ryoma KAWAJIRI
+
+<ul>
+<li>Email: <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6b;&#x61;&#119;&#x61;&#106;&#105;&#x72;&#105;&#x40;&#x69;&#99;&#115;&#x2e;&#116;&#x2e;&#x75;&#x2d;&#x74;&#111;&#107;&#x79;&#111;&#x2e;&#x61;&#x63;&#46;&#106;&#x70;">&#x6b;&#97;&#119;&#x61;&#x6a;&#105;&#114;&#105;&#64;&#105;&#99;&#x73;&#x2e;&#116;&#x2e;&#117;&#45;&#x74;&#111;&#x6b;&#x79;&#111;&#46;&#x61;&#x63;&#x2e;&#106;&#112;</a></li>
+<li>Affiliation: The University of Tokyo</li>
+</ul></li>
+<li>Author: Masamichi SHIMOSAKA
+
+<ul>
+<li>Email: <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x73;&#x69;&#x6d;&#111;&#115;&#x61;&#107;&#x61;&#64;&#105;&#x63;&#x73;&#46;&#116;&#x2e;&#117;&#x2d;&#116;&#111;&#107;&#x79;&#111;&#x2e;&#x61;&#x63;&#x2e;&#x6a;&#x70;">&#x73;&#x69;&#109;&#111;&#115;&#97;&#x6b;&#97;&#64;&#x69;&#x63;&#115;&#46;&#116;&#46;&#x75;&#45;&#x74;&#x6f;&#107;&#x79;&#x6f;&#x2e;&#97;&#99;&#46;&#106;&#112;</a></li>
+<li>Affiliation: The University of Tokyo</li>
+</ul></li>
+<li>Author: Hisashi KASHIMA
+
+<ul>
+<li>Email: <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x6b;&#97;&#115;&#104;&#x69;&#x6d;&#x61;&#64;&#x69;&#46;&#107;&#x79;&#111;&#116;&#111;&#45;&#117;&#x2e;&#97;&#x63;&#x2e;&#x6a;&#112;">&#x6b;&#97;&#115;&#104;&#x69;&#x6d;&#97;&#x40;&#x69;&#46;&#x6b;&#121;&#x6f;&#x74;&#111;&#45;&#117;&#x2e;&#97;&#99;&#46;&#x6a;&#112;</a></li>
+<li>Affiliation: Kyoto University</li>
+</ul></li>
+</ul>
+
+<h2 id="directorystructure">Directory Structure</h2>
+
+<p>Directory structure is below.
+The each directories are separately detailed.</p>
+
+<pre><code>./
+ ├─ EXP201312/  # DataSet
+ ├─ TESTDATA/ # Test Data
+ ├─ eng2/       # Building information (floor plans, latitude, longitude, size)
+ └─ README.html
+</code></pre>
+
+<h3 id="fileformat">File Format</h3>
+
+<p>All files are output by json format.
+Each json files are explained with examples and comments.
+Actual json files are not able to be written comments.</p>
+
+<p>About json format:</p>
+
+<ul>
+<li>Json <a href="http://en.wikipedia.org/wiki/JSON">http://en.wikipedia.org/wiki/JSON</a></li>
+<li>for Java <a href="https://code.google.com/p/google-gson/">https://code.google.com/p/google-gson/</a></li>
+<li>for Python <a href="https://docs.python.org/2/library/json.html">https://docs.python.org/2/library/json.html</a></li>
+<li>for C++ <a href="http://pfi.github.io/pficommon/text/json.html">http://pfi.github.io/pficommon/text/json.html</a></li>
+</ul>
+
+<h2 id="exp201312:experimentdataset"><code>EXP201312/</code>: Experiment Dataset</h2>
+
+<p>&#8220;Stamp Rally&#8221; is one of game style, which is popular in Japan. </p>
+
+<pre><code>EXP201312/
+ ├─ StampRally/  # Directory related to all users
+ │   ├─ Goals/  # Points of posters
+ │   │   ├─ Users/  # Correspondence users and point calculation algorithm
+ │   │   │   ├─ ${YYYY-MM-DD_HH-MM-SS}.json  # Files per 15 minutes
+ │   │   │   ├─ ...
+ │   │   │
+ │   │   └─ Goals_${ALGORITHM}/  # Results of poster points calculation
+ │   │       ├─ ${YYYY-MM-DD_HH-MM-SS}.json  # Result files per 15 minutes
+ │   │       ├─ ...
+ │   │
+ │   ├─ Scores/  # Scores users got
+ │   │   ├─ ${UNIXTIME}.json  # Files per 15 minutes
+ │   │   ├─ ...
+ │   │
+ │   ├─ config.json  # Configurations for timing.
+ │   └─ goallist.json  # Location information of smart posters
+ │
+ ├─ StampRally_${USER_ID}/  # Directorys of each users. IDs of students at Mechanical Engineering start from 'm', one of Electrical Engineering start from 'e'.
+ │   └─ Uploads/  # Directory for store files uploaded by the user.
+ │       ├─ TrainData/  # Train Data for localization
+ │       │   ├─ ${YYYY-MM-DD_HH-MM-SS}.json  # Files per 15 minutes
+ │       │   ├─ ... 
+ │       │
+ │       ├─ Views/  # Display information users view. (Activity called in Android) 
+ │       │   ├─ ${YYYY-MM-DD_HH-MM-SS}.json  # Files per 15 minutes
+ │       │   ├─ ...
+ │       │ 
+ │       └─ dev.json  # Device information
+ │
+ ├─ ...
+</code></pre>
+
+<h3 id="commonexplanation">Common Explanation</h3>
+
+<p>This section shows Common explanations for multiple files.</p>
+
+<h4 id="userid">User ID</h4>
+
+<p>9 person at the Mechanical Engineering have IDs from <code>m0</code> to <code>m8</code>,
+9 person at the Electrical Engineering have IDs from <code>e0</code> to <code>e8</code>.
+There are 18 person in total.</p>
+
+<h4 id="locationinformationformat">Location Information Format</h4>
+
+<pre><code>{&quot;latitude&quot;: 35.71440893673767,   // Unit: degree
+ &quot;accuracy&quot;: 0.5,                 // Accuracy. But, actually not used on this experiment.
+ &quot;longitude&quot;: 139.7619630396366,  // Unit: degree
+ &quot;floor&quot;: &quot;5F&quot;}                   // Floor name
+</code></pre>
+
+<h4 id="filenames">File names</h4>
+
+<p>file name for data collected while long-term shows time.
+The files are created every 15 minutes, if they have data.
+The name format is <code>${UNIXTIME}.json</code> and <code>${YYYY-MM-DD_HH-MM-SS}.json</code>.</p>
+
+<h3 id="stamprallydirectoryrelatedtoallusers"><code>StampRally/</code> Directory related to all users</h3>
+
+<h4 id="usersyyyy-mm-dd_hh-mm-ss.jsoncorrespondenceusersandpointcalculationalgorithm"><code>Users/${YYYY-MM-DD_HH-MM-SS}.json</code> Correspondence users and point calculation algorithm</h4>
+
+<p>The format of file name is <code>${YYYY-MM-DD_HH-MM-SS}.json</code>.
+Actually, the algorithms of all users are always same.</p>
+
+<pre><code class="javascript"> {&quot;e8&quot;: &quot;constant&quot;,  # User ID and Algorithm
+  &quot;m8&quot;: &quot;constant&quot;,
+  &quot;m5&quot;: &quot;constant&quot;,
+  ...
+  &quot;e3&quot;: &quot;constant&quot;,
+  &quot;e2&quot;: &quot;constant&quot;}
+</code></pre>
+
+<h4 id="goals_algorithmyyyy-mm-dd_hh-mm-ss.jsonresultsofposterpointscalculation"><code>Goals_${ALGORITHM}/${YYYY-MM-DD_HH-MM-SS}.json</code> Results of poster points calculation</h4>
+
+<p>There are three algorithms:
+<code>constant</code>，<code>random</code>, and <code>proposed</code>.</p>
+
+<p>The format of file name is
+<code>${YYYY-MM-DD_HH-MM-SS}.json</code>.</p>
+
+<pre><code>[{&quot;priority&quot;: 10,  // Poster points 
+  &quot;location&quot;: {&quot;latitude&quot;: 35.71440893673767,
+               &quot;accuracy&quot;: 0.5,
+               &quot;longitude&quot;: 139.7619630396366,
+               &quot;floor&quot;: &quot;5F&quot;}},
+  ...
+ {&quot;priority&quot;: 10,
+  &quot;location&quot;: {&quot;latitude&quot;: 35.71440893673767,
+               &quot;accuracy&quot;: 0.5,
+               &quot;longitude&quot;: 139.7619630396366,
+               &quot;floor&quot;: &quot;5F&quot;}}]
+</code></pre>
+
+<h4 id="scoresunixtime.jsonscoresusersgot"><code>Scores/${UNIXTIME}.json</code> Scores users got</h4>
+
+<p>The format of file name is <code>${UNIXTIME}.json</code> for only these files.</p>
+
+<pre><code>[{&quot;score&quot;: 30,  // Scores users got
+  &quot;user_id&quot;: &quot;e3&quot;},  // User ID
+ {&quot;score&quot;: 30,
+  &quot;user_id&quot;: &quot;m2&quot;},
+ ...
+ {&quot;score&quot;: 30,
+  &quot;user_id&quot;: &quot;e2&quot;}]
+</code></pre>
+
+<h4 id="goallist.jsonlistofposterlocations"><code>goallist.json</code> List of poster locations</h4>
+
+<pre><code>[{&quot;latitude&quot;: 35.71440893673767,
+  &quot;accuracy&quot;: 0.5,
+  &quot;longitude&quot;: 139.7619630396366,
+  &quot;floor&quot;: &quot;5F&quot;},
+ ...
+ {&quot;latitude&quot;: 35.71440893673767,
+  &quot;accuracy&quot;: 0.5,
+  &quot;longitude&quot;: 139.7619630396366,
+  &quot;floor&quot;: &quot;5F&quot;}]
+</code></pre>
+
+<h3 id="stamprally_user_iddirectorysofeachusers"><code>StampRally_${USER_ID}/</code> Directorys of each users</h3>
+
+<h4 id="traindatayyyy-mm-dd_hh-mm-ss.jsondirectoryforstorefilesuploadedbytheuser"><code>TrainData/${YYYY-MM-DD_HH-MM-SS}.json</code> Directory for store files uploaded by the user</h4>
+
+<p>Training data for indoor localizations.
+Pair of fingerprints (Wi-Fi, pressure, timing, acceleration) and location information.
+The format of file name is <code>${YYYY-MM-DD_HH-MM-SS}.json</code>.</p>
+
+<pre><code>[{&quot;fingerprint&quot;:{&quot;pressure&quot;:-1.0,  // Unit: hPa or mBar. Depends on devices. If not have barometers, -1.0.
+                 &quot;wifi&quot;:{&quot;2c:36:f8:60:08:02&quot;:  // ** MAC Address **
+                            {&quot;SSID&quot;:&quot;utroam&quot;,
+                             &quot;capabilities&quot;:&quot;[WPA-PSK-CCMP][WPA2-PSK-CCMP][ESS]&quot;,
+                             &quot;timestamp&quot;:494772539961,
+                             &quot;level&quot;:-84,  // Unit: dBm ** RSSI **
+                             &quot;frequency&quot;:2462},  // Units: kHz Some devices do not sense 5GHz.
+                         ...
+                         &quot;2c:36:f8:0f:ce:33&quot;:
+                            {&quot;SSID&quot;:&quot;utroam-1x&quot;,
+                             &quot;capabilities&quot;:&quot;[WPA2-EAP-CCMP][ESS]&quot;,
+                             &quot;timestamp&quot;:494772539991,
+                             &quot;level&quot;:-65,&quot;frequency&quot;:2462}},
+                 &quot;magnetic&quot;:{&quot;x&quot;:21.365026,  // Unit: μT
+                             &quot;y&quot;:6.39893,
+                             &quot;z&quot;:-4.9996953},
+                 &quot;gravity&quot;:{&quot;x&quot;:0.8168717,  // Unit: m/s^2
+                            &quot;y&quot;:5.544971,
+                            &quot;z&quot;:8.046912}},
+  &quot;location&quot;:{&quot;floor&quot;:&quot;8F&quot;,
+              &quot;accuracy&quot;:0.5,
+              &quot;latitude&quot;:35.714432347913,
+              &quot;longitude&quot;:139.76158618927002}},
+ {&quot;fingerprint&quot;:{&quot;pressure&quot;:-1.0,
+                 ... 
+ ...
+  ]
+</code></pre>
+
+<p>For details of sensors on Androids, see below.</p>
+
+<ul>
+<li><a href="http://developer.android.com/intl/ja/reference/android/net/wifi/ScanResult.html">Wifi Scan Result</a></li>
+<li><a href="http://developer.android.com/intl/ja/guide/topics/sensors/sensors_motion.html">Motion Sensor</a></li>
+<li><a href="http://developer.android.com/intl/ja/guide/topics/sensors/sensors_position.html">Position Sensor</a></li>
+<li><a href="http://developer.android.com/intl/ja/guide/topics/sensors/sensors_environment.html">Environment Sensor</a></li>
+</ul>
+
+<h4 id="viewsyyyy-mm-dd_hh-mm-ss.jsondisplayinformationusersview.activitycalledinandroid"><code>Views/${YYYY-MM-DD_HH-MM-SS}.json</code> Display information users view. (Activity called in Android)</h4>
+
+<p>The format of file name is <code>${YYYY-MM-DD_HH-MM-SS}.json</code>.</p>
+
+<pre><code>[{&quot;name&quot;:&quot;DropboxLinkActivity&quot;,  # The name of activity.
+  &quot;time&quot;:1389829259070},  # Time the activity opened
+  ...
+  {&quot;name&quot;:&quot;DropboxLinkActivity&quot;,
+  &quot;time&quot;:1389846587507}]
+</code></pre>
+
+<h4 id="dev_mac_address_or_null.jsondeviceinformation"><code>dev_${MAC_ADDRESS_OR_NULL}.json</code> Device information</h4>
+
+<p>The format of the file name is <code>dev.json</code>.</p>
+
+<pre><code>{&quot;BOARD&quot;:&quot;SH-01F&quot;,
+ &quot;BOOTLOADER&quot;:&quot;unknown&quot;,
+ &quot;BRAND&quot;:&quot;DOCOMO&quot;,&quot;CPU_ABI&quot;:
+ &quot;armeabi-v7a&quot;,
+ &quot;CPU_ABI2&quot;:&quot;armeabi&quot;,
+ &quot;DEVICE&quot;:&quot;SH-01F&quot;,
+ &quot;DISPLAY&quot;:&quot;01.00.01&quot;,
+ &quot;FINGERPRINT&quot;:&quot;DOCOMO/SH-01F/SH-01F:4.2.2/SA190/01.00.01:user/release-keys&quot;,
+ &quot;HARDWARE&quot;:&quot;qcom&quot;,
+ &quot;HOST&quot;:&quot;Sharp&quot;,
+ &quot;ID&quot;:&quot;SA190&quot;,
+ &quot;MANUFACTURER&quot;:&quot;SHARP&quot;,
+ &quot;MODEL&quot;:&quot;SH-01F&quot;,
+ &quot;PRODUCT&quot;:&quot;SH-01F&quot;,
+ &quot;SERIAL&quot;:&quot;Anonymous&quot;,
+ &quot;TAGS&quot;:&quot;release-keys&quot;,
+ &quot;TYPE&quot;:&quot;user&quot;,
+ &quot;USER&quot;:&quot;build&quot;,
+ &quot;TIME&quot;:1382123965000}
+</code></pre>
+
+<p>For details of each item, see the Android Manual.
+<a href="http://developer.android.com/intl/ja/reference/android/os/Build.html">http://developer.android.com/intl/ja/reference/android/os/Build.html</a>．</p>
+
+<h2 id="testdatadataforvalidationandtestthelocalizationaccuracyoncontrolledenvironment"><code>TESTDATA</code> Data for Validation and Test the localization accuracy on controlled environment</h2>
+
+<pre><code>TESTDATA/
+ ├─ StampRally_icskawa/
+ │   ├─ ValidationData/ # Data for validation and test localization
+ |   |   ├─ ${YYYY-MM-DD_HH-MM-SS}.json # Time data collection started
+ |   |   ├─ ...
+ |   |
+ │   └─ Uploads/  # Directory for store files uploaded by the user. these data are collected on controlled experiment. The formats are same as `EXP201312`
+ │       ├─ TrainData/  # Train Data for localization
+ │       │   ├─ ${YYYY-MM-DD_HH-MM-SS}.json  # Files per 15 minutes
+ │       │   ├─ ... 
+ │       │
+ │       ├─ Views/  # Display information users view. (Activity called in Android) 
+ │       │   ├─ ${YYYY-MM-DD_HH-MM-SS}.json  # Files per 15 minutes
+ │       │   ├─ ...
+ │       │ 
+ │       └─ dev.json  # Device information
+ │
+ └─ StampRally_kawajiri/
+     ├─ ...
+</code></pre>
+
+<h3 id="validationdata"><code>ValidationData</code></h3>
+
+<p>Data for validation and test localization.
+The format of file name is <code>${YYYY-MM-DD_HH-MM-SS}.json</code>.</p>
+
+<pre><code class="javascript"> [{&quot;fingerprint&quot;: {&quot;2c:36:f8:60:08:02&quot;:  // ** MAC Address **,
+                   ...},
+   &quot;location&quot;: {&quot;latitude&quot;: 35.71440893673767,
+                &quot;accuracy&quot;: 0.5,
+                 &quot;longitude&quot;: 139.7619630396366,
+                 &quot;floor&quot;: &quot;5F&quot;}},
+   ...
+   ]
+</code></pre>
+
+<h2 id="eng2mapdata"><code>eng2/</code> Map Data</h2>
+
+<p>Data for drawing maps.</p>
+
+<pre><code>eng2/
+ ├─ config.json  # Map information (latitude, longitude, bearing, size, ...)
+ ├─ 1F.png  # Map of first floor
+ ├─ ...
+ └─ 12F.png  # Map of 12 floor
+</code></pre>
+
+<h3 id="config.jsonmapinformationlatitudelongitudebearingsize"><code>config.json</code> Map information (latitude, longitude, bearing, size, &#8230;)</h3>
+
+<p>This file is also used in Android Apps.
+Therefore, there are some redundancies.</p>
+
+<pre><code>{&quot;latitude&quot;: 35.714295,  // default information
+ &quot;longitude&quot;: 139.761845,
+ &quot;width&quot;: 60,  // units: meter
+ &quot;height&quot;: 60,  // unites: meter
+ &quot;bearing&quot;: -12.5,  // degree
+ &quot;defaultFloor&quot;: 11,
+ &quot;floorMaps&quot;: {  // Floor maps
+    &quot;12F&quot;: {&quot;imagePath&quot; : &quot;12F.png&quot;,  // Name of image file
+            &quot;zIndex&quot; : 12,
+            &quot;positions&quot; : {},  // Do not write anything when it is same with defaults.
+            &quot;buttonIndex&quot; : 0,
+            &quot;buttonText&quot;: &quot;12F&quot;},
+    ...
+    &quot;5F&quot;: {&quot;imagePath&quot; : &quot;5F.png&quot;,
+           &quot;zIndex&quot; : 5,
+           &quot;positions&quot; : {   // Write information when it is different from defaults.
+              &quot;height&quot;: 67.5,
+              &quot;latitude&quot;:   35.71426,
+              &quot;longitude&quot;: 139.761860},
+           &quot;buttonIndex&quot; : 7,
+           &quot;buttonText&quot;: &quot;5F&quot;},
+    ...
+    &quot;1F&quot;: {&quot;imagePath&quot; : &quot;1F.png&quot;,
+           &quot;zIndex&quot; : 1,
+           &quot;positions&quot; : {   // Write information when it is different from defaults.
+              &quot;width&quot;: 68,
+              &quot;height&quot;: 73,
+              &quot;latitude&quot;:   35.71427,
+              &quot;longitude&quot;: 139.76185},
+           &quot;buttonIndex&quot; : 11,
+           &quot;buttonText&quot;: &quot;1F&quot;}}}
+</code></pre>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+{"session_length": 15,
+ "maximum_in_a_session": 3,
+ "start_hour": 8,
+ "end_hour": 20,
+ "start_dow": 0,
+ "end_dow": 4}
